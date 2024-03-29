@@ -1,10 +1,9 @@
-oclif-hello-world
+mdrs-util
 =================
 
-oclif example Hello World CLI
+Command-Line Utility (CLI) for generating reports for the Mars Desert Research Station (MDRS)
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![GitHub license](https://img.shields.io/github/license/oclif/hello-world)](https://github.com/oclif/hello-world/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/mdrs-community/mdrs-util)](https://github.com/mdrs-community/mdrs-util/blob/main/LICENSE)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -26,19 +25,22 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`mdrs-util hello PERSON`](#mdrs-util-hello-person)
-* [`mdrs-util hello world`](#mdrs-util-hello-world)
-* [`mdrs-util help [COMMAND]`](#mdrs-util-help-command)
-* [`mdrs-util plugins`](#mdrs-util-plugins)
-* [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin)
-* [`mdrs-util plugins:inspect PLUGIN...`](#mdrs-util-pluginsinspect-plugin)
-* [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin-1)
-* [`mdrs-util plugins:link PLUGIN`](#mdrs-util-pluginslink-plugin)
-* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin)
-* [`mdrs-util plugins reset`](#mdrs-util-plugins-reset)
-* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-1)
-* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-2)
-* [`mdrs-util plugins update`](#mdrs-util-plugins-update)
+- [mdrs-util](#mdrs-util)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`mdrs-util hello PERSON`](#mdrs-util-hello-person)
+  - [`mdrs-util hello world`](#mdrs-util-hello-world)
+  - [`mdrs-util help [COMMAND]`](#mdrs-util-help-command)
+  - [`mdrs-util plugins`](#mdrs-util-plugins)
+  - [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin)
+  - [`mdrs-util plugins:inspect PLUGIN...`](#mdrs-util-pluginsinspect-plugin)
+  - [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin-1)
+  - [`mdrs-util plugins:link PLUGIN`](#mdrs-util-pluginslink-plugin)
+  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin)
+  - [`mdrs-util plugins reset`](#mdrs-util-plugins-reset)
+  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-1)
+  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-2)
+  - [`mdrs-util plugins update`](#mdrs-util-plugins-update)
 
 ## `mdrs-util hello PERSON`
 
