@@ -25,22 +25,19 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-- [mdrs-util](#mdrs-util)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`mdrs-util hello PERSON`](#mdrs-util-hello-person)
-  - [`mdrs-util hello world`](#mdrs-util-hello-world)
-  - [`mdrs-util help [COMMAND]`](#mdrs-util-help-command)
-  - [`mdrs-util plugins`](#mdrs-util-plugins)
-  - [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin)
-  - [`mdrs-util plugins:inspect PLUGIN...`](#mdrs-util-pluginsinspect-plugin)
-  - [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin-1)
-  - [`mdrs-util plugins:link PLUGIN`](#mdrs-util-pluginslink-plugin)
-  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin)
-  - [`mdrs-util plugins reset`](#mdrs-util-plugins-reset)
-  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-1)
-  - [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-2)
-  - [`mdrs-util plugins update`](#mdrs-util-plugins-update)
+* [`mdrs-util hello PERSON`](#mdrs-util-hello-person)
+* [`mdrs-util hello world`](#mdrs-util-hello-world)
+* [`mdrs-util help [COMMAND]`](#mdrs-util-help-command)
+* [`mdrs-util plugins`](#mdrs-util-plugins)
+* [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin)
+* [`mdrs-util plugins:inspect PLUGIN...`](#mdrs-util-pluginsinspect-plugin)
+* [`mdrs-util plugins:install PLUGIN...`](#mdrs-util-pluginsinstall-plugin-1)
+* [`mdrs-util plugins:link PLUGIN`](#mdrs-util-pluginslink-plugin)
+* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin)
+* [`mdrs-util plugins reset`](#mdrs-util-plugins-reset)
+* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-1)
+* [`mdrs-util plugins:uninstall PLUGIN...`](#mdrs-util-pluginsuninstall-plugin-2)
+* [`mdrs-util plugins update`](#mdrs-util-plugins-update)
 
 ## `mdrs-util hello PERSON`
 
