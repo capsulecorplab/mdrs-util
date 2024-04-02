@@ -4,24 +4,30 @@
     "mdrs-util": "./bin/run.js"
   },
   "dependencies": {
+    "@inquirer/confirm": "^3.0.0",
+    "@inquirer/input": "^2.0.0",
+    "@inquirer/select": "^2.0.0",
     "@oclif/core": "^3",
     "@oclif/plugin-help": "^6",
-    "@oclif/plugin-plugins": "^4",
-    "shelljs": "^0.8.5"
+    "@types/inquirer": "^9.0.7",
+    "inquirer": "^9.2.14",
+    "mdrs-util-lib-common": "^0.0.0",
+    "mdrs-util-lib-fs": "^0.0.0"
   },
-  "description": "Command-line utility for MDRS",
+  "description": "Mach 30 package manager for m30ml projects",
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3",
     "@types/chai": "^4",
-    "@types/mocha": "^10.0.0",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^18",
     "chai": "^4",
-    "eslint": "^8.57.0",
+    "eslint": "^8.56.0",
     "eslint-config-oclif": "^5",
     "eslint-config-oclif-typescript": "^3",
     "eslint-config-prettier": "^9.1.0",
     "mocha": "^10",
+    "nyc": "^15.1.0",
     "oclif": "^4",
     "shx": "^0.3.3",
     "ts-node": "^10.9.2",
@@ -39,30 +45,31 @@
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "name": "mdrs-util",
+  "workspaces": [
+    "./packages/*"
+  ],
   "oclif": {
     "bin": "mdrs-util",
     "dirname": "mdrs-util",
     "commands": "./dist/commands",
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+      "@oclif/plugin-help"
     ],
     "topicSeparator": " ",
     "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
+      "project": {
+        "description": "Create and manage m30ml projects"
       }
     }
   },
-  "repository": "mdrs-community/mdrs-util",
+  "repository": "https://github.com/mdrs-community/mdrs-util",
   "scripts": {
-    "build": "shx rm -rf dist && tsc -b",
+    "build": "npm run build -w packages/mdrs-util-lib-common && npm run build -w packages/mdrs-util-lib-fs && shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "npm run lint",
     "prepack": "npm run build && oclif manifest && oclif readme",
-    "prepare": "npm run build",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "nyc mocha --require ts-node/register --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
   "version": "0.0.0",
@@ -70,5 +77,11 @@
   "keywords": [
     "oclif"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "nyc": {
+    "exclude": [
+      "packages/**",
+      "test/**"
+    ]
+  }
 }
