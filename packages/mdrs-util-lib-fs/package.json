@@ -1,0 +1,33 @@
+{
+  "name": "mdrs-util-lib-fs",
+  "version": "0.0.0",
+  "description": "mdrs-util filesystem implementation library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "shx rm -rf dist/ && tsc -b",
+    "test": "nyc mocha --forbid-only"
+  },
+  "author": "Sean Marquez",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/shelljs": "^0.8.15",
+    "mdrs-util-lib-common": "^0.0.2",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@oclif/test": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^18.19.26",
+    "chai": "^4",
+    "mocha": "^10",
+    "nyc": "^15.1.0",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

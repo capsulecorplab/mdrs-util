@@ -1,0 +1,32 @@
+{
+  "name": "mdrs-util-lib-common",
+  "version": "0.0.2",
+  "description": "mdrs-util common functions library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "shx rm -rf dist/ && tsc -b",
+    "test": "nyc mocha --forbid-only"
+  },
+  "author": "Sean Marquez",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@oclif/test": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^18.19.26",
+    "chai": "^4",
+    "mocha": "^10",
+    "nyc": "^15.1.0",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/semver": "^7.5.8",
+    "semver": "^7.6.0"
+  }
+}

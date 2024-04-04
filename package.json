@@ -14,7 +14,7 @@
     "mdrs-util-lib-common": "^0.0.0",
     "mdrs-util-lib-fs": "^0.0.0"
   },
-  "description": "Mach 30 package manager for m30ml projects",
+  "description": "Command-line utility for generating reports for the Mars Desert Research Station (MDRS)",
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3",
